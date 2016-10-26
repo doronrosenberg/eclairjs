@@ -8,7 +8,7 @@ The [EclairJS project](http://eclairjs.org) provides JavaScript and Node.js deve
 $ npm install eclairjs
 ```
 
-EclairJS requires Node 0.12 or higher and also requires a running instance of [EclairJS Server](https://github.com/EclairJS/eclairjs/tree/master/server).
+EclairJS requires Node 0.12 or higher and also requires a running instance of [EclairJS Server](https://github.com/EclairJS/eclairjs/tree/master/server) (see the [Deploy](#deploy) section below for more information).
 
 ## Example
 EclairJS Client's api mirrors the Spark api.  Here is the simple code example:
@@ -40,6 +40,7 @@ doubleddata.collect().then(function(results) {
 ```
 
 ## Try It
+
 EclairJS provides a Docker container that contains all of its dependencies on 
 [Dockerhub](https://hub.docker.com/r/eclairjs/minimal-gateway/).
 
