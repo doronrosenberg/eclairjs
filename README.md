@@ -8,7 +8,7 @@ The [EclairJS project](http://eclairjs.org) provides JavaScript and Node.js deve
 $ npm install eclairjs
 ```
 
-EclairJS requires Node 0.12 or higher and also requires a running instance of [EclairJS Server](https://github.com/EclairJS/eclairjs/tree/master/server) (see the [Deploy](#deploy) section below for more information).
+EclairJS requires Node 0.12 or higher, Apache Spark 2.0.x as well as a running instance of [EclairJS Server](https://github.com/EclairJS/eclairjs/tree/master/server) (see the [Deploy](#deploy) section below for more information).
 
 ## Example
 EclairJS Client's api mirrors the Spark api.  Here is the simple code example:
@@ -84,13 +84,15 @@ EclairJS provide a convenient Docker container (see [Using the Docker Container]
 
 ## Progress
 
-|Spark Feature    |EclairJS Client Status|
+EclairJS supports the following Apache Spark 2.0 features:
+
+|Spark Feature    |EclairJS Status|
 |-----------------|--------------------|
-|RDD/Dataset      | Partial Support    |
-|SQL/DataFrames   | Partial Support    |
-|Streaming        | Partial Support    |
-|ml               | Partial Support    |
-|mllib            | Partial Support    |
+|RDD/Dataset      | Supported          |
+|SQL/DataFrames   | Supported          |
+|Streaming        | Supported          |
+|ml               | Supported          |
+|mllib            | Supported          |
 |GraphX           | Unsupported        |
 
 Refer to the [API Documentation](https://github.com/EclairJS/eclairjs/wikis/Client-API-Documentation) for a list of what is currently implemented.  Please note as new APIs are implemented for EclairJS Client they will be added to the master branch.
