@@ -17,6 +17,7 @@ var ds = session.sparkContext().parallelize([1,2,3,4,5])
 ds.map(function(i) {
   return i+1
 }).collect().then(function(r) {
+  session.stop();
   console.log(r)
 })
 
